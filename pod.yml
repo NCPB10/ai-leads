@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: thirddocker-deployment
+  labels:
+    app: thirddocker
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: thirddocker
+  template:
+    metadata:
+      labels:
+        app: thirddocker
+    spec:
+      containers:
+      - name: thirddocker-container
+        image: naveenchandra0/thirddocker:latest2
+        ports:
+        - containerPort: 8080
