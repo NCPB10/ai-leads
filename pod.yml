@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: thirddocker-container
-        image: naveenchandra0/thirddocker:latest2
+        image: naveenchandra0/thirddocker:latest3
         ports:
         - containerPort: 8080
 ---
